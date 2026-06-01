@@ -1,0 +1,294 @@
+{
+  "$schema": "https://design-tokens.org/format",
+  "meta": {
+    "name": "WellSpring Egypt — Brand Design Spec",
+    "version": "1.0",
+    "source": "WSE Brand Identity Guidelines V4 (2022) + WellSpring operational segmentation (2024+)",
+    "purpose": "Machine-readable brand reference for design tools. Apply these tokens and rules to any WellSpring branded output (decks, docs, social, web, proposals).",
+    "authority_note": "Hex codes are the source of truth for digital. RGB values are derived from hex. The 2022 PDF listed RGB/PMS values that do not match the digital hex; the hex codes here are correct and override the PDF's RGB/PMS."
+  },
+
+  "brand": {
+    "legal_name": "WellSpring Egypt",
+    "global_parent": "WellSpring Global",
+    "founded": 2009,
+    "operates_in": ["Egypt", "UAE", "Lebanon", "Morocco", "Poland", "USA", "Saudi Arabia"],
+    "accreditation": ["Leadership Development International (LDI)", "Winshape International"],
+    "methodology": "Experiential Learning (Kolb's Experiential Learning Theory)",
+    "vision": "To empower the new generation to transform the Egyptian community from the inside out.",
+    "mission": "Bringing experiential learning to life through fun environments to the new generation.",
+    "core_values": ["Integrity", "Passion", "Excellence", "Leadership", "Teamwork", "Service"],
+    "name_meaning": {
+      "well": "Wellness",
+      "spring": "Happiness, Delight, Fun",
+      "figure": "Life, Transformation (Changemakers), Warmth (Cohesiveness & Bonding)"
+    },
+    "primary_tagline": "Live — from the Inside Out",
+    "tone": "Warm, energetic, community-focused, Egyptian culture-aware; bilingual (EN/AR) where relevant."
+  },
+
+  "color": {
+    "core": {
+      "ws_blue_1": { "value": "#147cab", "rgb": [20, 124, 171], "pms": 285, "role": "Primary / dominant brand color. Section bars, accents, top & bottom bars." },
+      "ws_blue_2": { "value": "#136090", "rgb": [19, 96, 144], "pms": 286, "role": "Darker blue. Gradient endpoints, depth." },
+      "ws_green":  { "value": "#a0be55", "rgb": [160, 190, 85], "pms": 375, "role": "Secondary. Taglines, supporting titles, divider accents, the logo leaf." },
+      "white":     { "value": "#ffffff", "rgb": [255, 255, 255], "role": "Headings & body text on dark backgrounds." }
+    },
+    "gradient_1": {
+      "type": "linear",
+      "angle_deg": -13.2,
+      "stops": ["#136090", "#147cab", "#136090"],
+      "note": "WS-G Gradient 1: Blue 2 → Blue 1 → Blue 2."
+    },
+    "expanded_palette": [
+      "#2B3990", "#FCEE21", "#FDBC59", "#6CC9CA", "#AB2179",
+      "#EE2C7B", "#EF539E", "#F04F23", "#EFF3F4", "#6EC59E",
+      "#74CDD7", "#009CA6", "#DAD9D9", "#00AEEF",
+      "#006838", "#262262", "#F7941D", "#FBB040", "#1C75BC"
+    ],
+    "presentation_palette": {
+      "bg_primary":      { "value": "#071E34", "role": "Dominant slide background (dark navy)." },
+      "bg_panel_1":      { "value": "#042038", "role": "Content panel / card fill." },
+      "bg_panel_2":      { "value": "#05243a", "role": "Alt card fill for layering/depth." },
+      "text_body_soft":  { "value": "#c8e0ec", "role": "Descriptive body copy on dark bg — softer than white." },
+      "text_dark_label": { "value": "#071E34", "role": "Text on light or colored backgrounds." },
+      "accent_orange":   { "value": "#F7941D", "role": "Tertiary accent. One element per slide max, never dominant." },
+      "accent_teal":     { "value": "#74CDD7", "role": "Supporting accent, use sparingly." },
+      "villain_bg":      { "value": "#1a0a2e", "role": "Contrast/'villain' slides only (e.g. The Glitch)." },
+      "villain_accent":  { "value": "#CC2244", "role": "Contrast/'villain' slide borders & labels only." }
+    },
+    "division_colors": {
+      "camps":      { "c1": [0,166,192], "c2": [0,149,171], "orange": [249,159,42] },
+      "leadership": { "c1": [0,88,132], "c2": [0,70,110], "c3": [0,160,171] },
+      "education":  { "c1": [42,169,91], "c2": [0,157,79], "yellow": [241,195,25] },
+      "family":     { "c1": [120,74,107], "c2": [111,160,97], "c3": [191,119,178] }
+    },
+    "rules": [
+      "Primary colors for almost everything: #147cab, #a0be55, white.",
+      "NEVER use forest green as a full slide/page background — not a brand color. Dark green allowed only as a card fill inside a navy layout.",
+      "Avoid off-brand colors (random purples, browns, reds) outside designated villain/contrast slides.",
+      "On dark backgrounds use white text; light-blue-grey (#c8e0ec) for softer body copy."
+    ]
+  },
+
+  "typography": {
+    "approved_typefaces": {
+      "fontin_sans_italic": { "role": "Display 1", "use": "Core messaging tagline/headline only", "licensed": true },
+      "fontin_sans":        { "role": "Display 2", "weights": ["Regular", "Bold"], "use": "Headlines, subheaders", "licensed": true },
+      "myriad_pro":         { "role": "Body (primary)", "weights": ["Regular", "Italic", "Bold"], "licensed": true },
+      "helvetica":          { "role": "Body (substitute)", "weights": ["Regular", "Bold"], "use": "When Myriad Pro unavailable (web, MS Office)", "licensed": true },
+      "avenir":             { "role": "Extended", "weights": ["Light", "Book", "Medium", "Heavy", "Black"], "licensed": true },
+      "poppins":            { "role": "Extended (freely available stand-in)", "weights": ["Light", "Regular", "Medium", "SemiBold", "Bold"], "licensed": false },
+      "kids_monday":        { "role": "Fun/youth content", "use": "Camps, kids programs", "licensed": true },
+      "aref_menna_bold":    { "role": "Arabic (primary)", "script": "arabic", "licensed": true },
+      "aaa_golden_lotus":   { "role": "Arabic (secondary)", "script": "arabic", "licensed": true }
+    },
+    "roles": {
+      "heading": ["Fontin Sans", "Poppins Bold"],
+      "body": ["Myriad Pro", "Helvetica", "Poppins Regular"],
+      "arabic": ["Aref Menna Bold", "AAAGoldenLotus"]
+    },
+    "powerpoint_safe": {
+      "note": "Calibri is the PowerPoint-safe substitute for Poppins/Myriad Pro. Do NOT use Arial, Times, or other generic fonts.",
+      "headings": { "font": "Calibri Black / Calibri Bold", "size_pt": [28, 52] },
+      "section_labels": { "font": "Calibri Bold", "size_pt": [9, 11], "all_caps": true, "char_spacing": [3, 4] },
+      "body": { "font": "Calibri", "size_pt": [9.5, 13] },
+      "italic_accent": { "font": "Calibri Italic Bold", "color": ["#a0be55", "#147cab"] }
+    },
+    "rules": [
+      "Headlines: Title Case; stagger lines for movement; tight leading; manually kern display type.",
+      "Body: left-aligned (ragged right); no hyphenation; single space between sentences; separate paragraphs with a line break (no indents).",
+      "Lead-ins: first sentence 4–6pt larger, in color, inline with body copy.",
+      "Avoid widows, orphans, and unnatural line breaks."
+    ]
+  },
+
+  "logo": {
+    "mark_name": "The LeafDrop",
+    "mark_description": "Water drop + green leaf. May be used as a standalone design element.",
+    "mark_variations": [
+      { "name": "full_color", "use": "Most instances" },
+      { "name": "primary_reversed_white", "use": "Dark backgrounds where WS Green integrity is maintained" },
+      { "name": "secondary_reversed_white", "use": "Dark green backgrounds where WS Green cannot be maintained" },
+      { "name": "one_color_black", "use": "Limited: embroidery, engraving only" }
+    ],
+    "minimum_size": {
+      "print_primary_in": 1.3,
+      "print_secondary_in": 1.0,
+      "screen_primary_in": 1.5,
+      "screen_primary_alt_in": 1.65
+    },
+    "exclusion_zone": "Clear space on all sides equal to the height of the 'W' in the WellSpring logo. Same minimum distance from page edges.",
+    "never_do": [
+      "Stretch or distort (scale must stay proportional).",
+      "Rotate.",
+      "Add effects (stroke, drop shadow, glow).",
+      "Modify colors.",
+      "Rearrange logo elements / separate the logo leaf from the logo.",
+      "Place on a busy background.",
+      "Place full-color logo on a dark background — use the white/reversed version."
+    ],
+    "library": {
+      "wellspring_main": {
+        "use": "All general WellSpring Egypt comms, umbrella proposals, corporate/Business Solutions materials, email signatures, letterheads.",
+        "files": { "full_color": "WS_logo-01.png", "white_reversed": "WS_logo-02.png" },
+        "tagline": "Live — from the Inside Out"
+      },
+      "kids_family": {
+        "use": "Kids & Families segment — day camp flyers, parent outreach, family proposals, school parent comms, B2C camp marketing.",
+        "files": { "full_color": "Kids___Family_logo-01.png", "white_reversed": "Kids___Family_logo-02.png" },
+        "tone": "Fun, warm, approachable. No tagline."
+      },
+      "next_g": {
+        "use": "Next G / Youth & Adolescents (14–22) — youth leadership, school programs, Gen Z social, youth partnerships.",
+        "files": { "full_color": "Next_G_logo-01.png", "white_dark": "Next_G_logo-02.png" },
+        "tone": "Bold, energetic, modern. Never on conservative corporate materials."
+      },
+      "community_development": {
+        "use": "Community Development — NGO partnerships, government proposals, social enterprise, impact reports, CSR with social focus.",
+        "files": { "full_color": "community_development_logo-01.png", "white_reversed": "community_development_logo-02.png" },
+        "tagline": "Lead — from the Inside Out",
+        "tone": "Purposeful, structured, institutional."
+      },
+      "ws_foundation": {
+        "use": "Foundation-level / philanthropic / donor-facing / charitable CSR. Bilingual EN + AR.",
+        "files": { "full_color": "WS_Foundation_logo-01.png", "white_reversed": "WS_Foundation_logo-02.png" },
+        "tone": "Warm, community-driven, human. No tagline."
+      }
+    },
+    "selection_logic": [
+      { "context": "General WellSpring Egypt proposal / email / doc", "logo": "wellspring_main" },
+      { "context": "Business Solutions / Corporate / Team Building", "logo": "wellspring_main" },
+      { "context": "Kids camp flyer / parent communication", "logo": "kids_family" },
+      { "context": "Youth program / Gen Z content / school program (14–22)", "logo": "next_g" },
+      { "context": "NGO / government / community program", "logo": "community_development" },
+      { "context": "Charity / philanthropic CSR / donor-facing", "logo": "ws_foundation" },
+      { "context": "Dark or photo background", "logo": "white/reversed version of the relevant logo" },
+      { "context": "Light or white background", "logo": "full-color version of the relevant logo" }
+    ]
+  },
+
+  "graphics": {
+    "leaf_element": {
+      "note": "Standalone leaf derived from the logo mark. Two variations: WS Green, or White at 15% opacity.",
+      "warning": "The design-element leaf is DIFFERENT from the logo leaf — never separate the leaf from the logo itself."
+    },
+    "wave": {
+      "meaning": "Life and renewal; key unifying element across divisions.",
+      "variations": "6 color variations (one per division + Global).",
+      "uses": ["Page headers", "Framing photography", "Breaking up space", "Drawing the eye"]
+    }
+  },
+
+  "photography": {
+    "general_rules": [
+      "Professional photography preferred; stock acceptable as fallback.",
+      "Candid non-professional photos only for website libraries — not promotional materials.",
+      "Subjects reflect the local Egyptian demographic and are dressed appropriately for Egyptian cultural context."
+    ],
+    "by_segment": {
+      "business_solutions": "Confident professionals, team interactions, corporate settings, coaching moments, light/airy backgrounds.",
+      "kids_families": "Joyful children, parent-child moments, camp activities, colorful and energetic group energy.",
+      "next_g": "Authentic youth portraits, peer dynamics, leadership moments, aspirational but real — not overly staged.",
+      "community_development": "Community gatherings, real people, impact moments, culturally grounded Egyptian settings."
+    }
+  },
+
+  "segments": {
+    "business_solutions": {
+      "audience": "Corporate HR, CSR, L&D managers",
+      "offering": "Team building, CSR programs, leadership workshops, corporate camps",
+      "tone": "Professional, confident, results-focused",
+      "core_angle": "Invest in your people. Build a team that performs and connects.",
+      "keywords": ["team building", "CSR impact", "experiential learning", "leadership development", "measurable outcomes", "employee engagement", "ROI", "customized programs"],
+      "logo": "wellspring_main"
+    },
+    "kids_families": {
+      "audience": "Parents, children (ages 4–14), families",
+      "offering": "Day camps, overnight camps, family programs, parent-child experiences",
+      "tone": "Warm, energetic, reassuring to parents, exciting to kids",
+      "core_angle": "Safe, fun, transformative experiences your kids will never forget.",
+      "keywords": ["day camps", "overnight camps", "adventure", "character building", "Egyptian values", "parent-child bonding", "safe space", "skills for life"],
+      "logo": "kids_family"
+    },
+    "next_g": {
+      "audience": "Youth ages 14–22, school students",
+      "offering": "Leadership programs, youth camps, character development, school programs",
+      "tone": "Bold, inspiring, direct, youth-facing — avoid corporate language",
+      "core_angle": "Discover who you are. Lead from the inside out.",
+      "keywords": ["identity", "purpose", "leadership", "real-world skills", "confidence", "peer community", "youth development", "character first"],
+      "logo": "next_g"
+    },
+    "community_development": {
+      "audience": "NGOs, government bodies, social enterprises",
+      "offering": "Social impact programs, community-based initiatives",
+      "tone": "Purposeful, collaborative, mission-driven",
+      "core_angle": "Transforming communities from the inside out, one program at a time.",
+      "keywords": ["social impact", "community transformation", "partnership", "scalable programs", "NGO collaboration", "government engagement", "sustainable change"],
+      "logo": "community_development"
+    }
+  },
+
+  "layout": {
+    "presentation": {
+      "every_slide_must_have": [
+        "Top bar: thin WS Blue (#147cab) full-width rectangle, height ~0.12\", at y=0.",
+        "Bottom bar: thin WS Blue (#147cab) full-width rectangle, height ~0.125\", at y=5.5\".",
+        "Segment logo bottom-right (x≈8.25, y≈4.95, w≈1.55, h≈0.62). White logo on dark bg; full-color on light bg.",
+        "Footer text where applicable: 'Hotline: 19304 | www.wellspringegypt.com | Live — from the Inside Out' — small, muted, bottom-left."
+      ],
+      "patterns": {
+        "two_panel_split": "Left dark panel + right slightly different dark shade, separated by a thin WS Blue vertical line (w=0.1\").",
+        "section_header_bar": "Full-width WS Blue rectangle (h≈0.3\") with white text at top of slide.",
+        "image_cards": "Portrait images as cover-cropped rectangles; colored name label box below each.",
+        "stat_box": "Dark fill (#042038) + colored border (1.5pt); large number in brand color, small white label below.",
+        "quote_box": "Dark fill + 1pt colored border; italic bold text in accent color.",
+        "cover_slide": "Left dark navy panel + WS Blue vertical accent stripe (w≈0.18\"); right full-bleed image. Title stack: category label (WS Green, char-spaced) → 'THE [THEME]' (white) → title line 1 (WS Blue) → title line 2 (WS Green) → subtitle (teal italic) → divider → description. Tagline always in WS Green italic.",
+        "closing_slide": "Left full-bleed character image; right section label (WS Green) → headline (white + WS Blue) → stats → body → WS Blue footer bar with tagline + contact. White logo over image bottom-left."
+      },
+      "never_do": [
+        "Any slide without the segment logo.",
+        "Forest green as a slide background.",
+        "Off-brand colors (random purples, browns, reds) outside villain slides.",
+        "Accent underlines beneath titles — use whitespace/contrast instead.",
+        "Text-only slides with no visual element.",
+        "Logo stretched, rotated, or recolored.",
+        "Full-color logo on dark/navy background — use the white version."
+      ]
+    },
+    "collateral": {
+      "business_card": {
+        "front": "LeafDrop mark, Name (bold), Title, Email, Phone (+201x), Hotline 19304, Address.",
+        "back": "WellSpring logo + QR code + www.wellspringegypt.com"
+      },
+      "email_signature": "Logo | Name | Title | Address | Mobile | Hotline: 19304 | Values list | Website | Social icons (FB, IG, YouTube).",
+      "letterhead": {
+        "header": "LeafDrop mark top center + date top right.",
+        "footer": "WellSpring logo + Address + info@wellspringegypt.com + Website + 'Facebook: WellSpring Egypt' + Hotline: 19304.",
+        "accent": "Wave graphic at bottom."
+      },
+      "social": [
+        "FB/IG posts: WellSpring logo top-left, partner logo (e.g. National Bank of Egypt) top-right when applicable.",
+        "Facebook cover: 16:9, wave graphic, camps photography.",
+        "Always include hotline 19304 and website."
+      ]
+    }
+  },
+
+  "contact": {
+    "address": "7 Tag El Din El Sobki St, Ard El Golf, Heliopolis, Cairo, Egypt",
+    "hotline": "19304",
+    "website": "www.wellspringegypt.com",
+    "email": "info@wellspringegypt.com",
+    "social": { "facebook": "WellSpring Egypt", "instagram": "WellSpring Egypt", "youtube": "WellSpring Egypt" }
+  },
+
+  "quick_reference": {
+    "primary_colors": ["#147cab", "#a0be55", "#ffffff"],
+    "heading_font": "Fontin Sans / Poppins Bold (Calibri Bold in PowerPoint)",
+    "body_font": "Myriad Pro / Helvetica / Poppins Regular (Calibri in PowerPoint)",
+    "logo_placement": "Top-left or top-center (docs) / bottom-right (slides); always respect exclusion zone.",
+    "tagline": "Live — from the Inside Out",
+    "footer_must_include": ["Address", "Hotline 19304", "Website", "Social handles"]
+  }
+}
